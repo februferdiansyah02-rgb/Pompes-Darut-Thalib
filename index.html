@@ -3,113 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pondok Pesantren Darut Thalib</title>
+    <title>Pondok Pesantren Al-Hikmah - Sekolah Agama</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
-    
+       
     </style>
-<base target="_blank">
 </head>
 <body>
 
     <!-- Loading Screen -->
     <div class="loader" id="loader">
-        <div class="loader-content">
-            <img src="Screenshot 2026-06-24 203849.png" alt="Logo Darut Thalib" class="loader-logo">
-            <div class="loader-text">Pondok Pesantren Darut Thalib</div>
-        </div>
+        <div class="loader-icon"></div>
+        <div class="loader-text">Pondok Pesantren Darut thalib</div>
     </div>
 
-    <!-- Navigation -->
+    <!-- Animated Background -->
+    <div class="hero-bg">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="mosque-silhouette"></div>
+    </div>
+
+    <!-- Navbar -->
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a class="logo" onclick="scrollToSection('home')">
-                <img src="Screenshot 2026-06-24 203849.png" alt="Logo Darut Thalib">
-                <div class="logo-text">
-                    <h1>Darut Thalib</h1>
-                    <span>Pondok Pesantren Modern</span>
-                </div>
-            </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a onclick="scrollToSection('home')" class="active" data-section="home">Beranda</a></li>
-                <li><a onclick="scrollToSection('profil')" data-section="profil">Profil</a></li>
-                <li><a onclick="scrollToSection('pengajar')" data-section="pengajar">Pengajar</a></li>
-                <li><a onclick="scrollToSection('program')" data-section="program">Program</a></li>
-                <li><a onclick="scrollToSection('fasilitas')" data-section="fasilitas">Fasilitas</a></li>
-                <li><a onclick="scrollToSection('berita')" data-section="berita">Berita</a></li>
-                <li><a onclick="scrollToSection('galeri')" data-section="galeri">Galeri</a></li>
-                <li><a onclick="scrollToSection('alumni')" data-section="alumni">Alumni</a></li>
-                <li><a onclick="scrollToSection('kontak')" data-section="kontak">Kontak</a></li>
-            </ul>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
+        <div class="logo">
+            <div class="logo-icon"><img src="Screenshot 2026-06-24 203849.png" alt=""></div>
+            <div class="logo-text">Darut <span>Thalib</span></div>
         </div>
+        <ul class="nav-links">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="pelajaran.html">Program</a></li>
+            <li><a href="#fasilitas">Fasilitas</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section class="hero" id="beranda">
         <div class="hero-content">
-            <div class="hero-badge">✨ Pesantren Modern Berbasis Al-Qur'an</div>
-            <h2>Pondok Pesantren Darut Thalib</h2>
-            <p>Membentuk Generasi Qur'ani yang Berilmu, Berakhlak Mulia, dan Mandiri untuk Kemaslahatan Umat</p>
+            <div class="hero-badge">✨ Selamat Datang di Website Resmi</div>
+            <h1>Pondok Pesantren <span>Darut thalib</span></h1>
+            <p>Membentuk generasi Qur'ani yang berakhlak mulia, berilmu luas, dan siap menjadi santri hari ini ulama masa depan.</p>
             <div class="hero-buttons">
-                <a href="https://wa.me/6282287196964" target="_blank" class="btn btn-primary">
-                    <i class="fab fa-whatsapp"></i> Hubungi Kami
+                <a href="#tentang" class="btn btn-primary">
+                    <i class="fas fa-book-open"></i> Jelajahi Lebih
                 </a>
-                <a onclick="scrollToSection('profil')" class="btn btn-outline">
-                    <i class="fas fa-info-circle"></i> Pelajari Lebih Lanjut
+                <a href="#kontak" class="btn btn-outline">
+                    <i class="fas fa-phone"></i> Hubungi Kami
                 </a>
             </div>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <div class="stat-number">500+</div>
-                    <div class="stat-label">Santri Aktif</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">50+</div>
-                    <div class="stat-label">Pengajar</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">25</div>
-                    <div class="stat-label">Tahun Berdiri</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">1000+</div>
-                    <div class="stat-label">Alumni</div>
-                </div>
-            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about" id="profil">
-        <div class="container">
-            <div class="section-header reveal">
-                <h2>Profil Pesantren</h2>
-                <div class="divider"></div>
-                <p>Mengenal lebih dekat Pondok Pesantren Darut Thalib, lembaga pendidikan Islam yang berkomitmen mencetak generasi unggul</p>
+    <section class="about" id="tentang">
+        <div class="about-grid reveal">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1564121211835-e88c852648ab?w=600&h=500&fit=crop" alt="Santri Sedang Belajar">
             </div>
-            <div class="about-grid">
-                <div class="about-image reveal">
-                    <img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?w=800" alt="Pesantren Darut Thalib">
-                </div>
-                <div class="about-content reveal">
-                    <h3>Sejarah Berdiri</h3>
-                    <p>Pondok Pesantren Darut Thalib didirikan pada tahun 1999 dengan visi menjadi lembaga pendidikan Islam yang mampu menghasilkan generasi Qur'ani yang berilmu, berakhlak mulia, dan siap menghadapi tantangan zaman.</p>
-                    <p>Dengan semangat "Menuntut Ilmu dari Bayi Hingga Liang Lahat", pesantren ini terus berkembang menjadi salah satu institusi pendidikan Islam terdepan yang mengintegrasikan pendidikan tradisional dan modern.</p>
-
-                    <div class="vision-mission">
-                        <div class="vm-card">
-                            <h4><i class="fas fa-eye"></i> Visi</h4>
-                            <p>Menjadi pesantren unggul yang menghasilkan generasi Qur'ani, berilmu luas, berakhlak mulia, dan mandiri.</p>
-                        </div>
-                        <div class="vm-card">
-                            <h4><i class="fas fa-bullseye"></i> Misi</h4>
-                            <p>Menyelenggarakan pendidikan Islam berkualitas, mengembangkan potensi santri, dan membentuk karakter keislaman.</p>
-                        </div>
+            <div class="about-content">
+                <h3>Tentang Kami</h3>
+                <p>Pondok Pesantren Al-Hikmah didirikan pada tahun 1995 dengan visi mencetak generasi Muslim yang unggul dalam ilmu agama dan umum. Kami menyediakan lingkungan belajar yang kondusif dengan pendekatan tradisional salaf yang dipadukan dengan metode modern.</p>
+                <p>Dengan lebih dari 25 tahun pengalaman, kami telah meluluskan ribuan santri yang kini berkontribusi di berbagai bidang kehidupan, mulai dari dunia pendidikan, kesehatan, hingga pemerintahan.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h4 class="counter" data-target="1500">0</h4>
+                        <span>Santri Aktif</span>
+                    </div>
+                    <div class="stat-item">
+                        <h4 class="counter" data-target="120">0</h4>
+                        <span>Pengajar</span>
+                    </div>
+                    <div class="stat-item">
+                        <h4 class="counter" data-target="28">0</h4>
+                        <span>Tahun Berdiri</span>
                     </div>
                 </div>
             </div>
@@ -118,371 +95,329 @@
 
     <!-- Programs Section -->
     <section class="programs" id="program">
-        <div class="container">
-            <div class="section-header reveal">
-                <h2>Program Pendidikan</h2>
-                <div class="divider"></div>
-                <p>Berbagai program unggulan yang dirancang untuk membentuk santri yang berkualitas secara spiritual dan intelektual</p>
+        <div class="section-header reveal">
+            <h2>Program Unggulan</h2>
+            <div class="divider">
             </div>
-            <div class="programs-grid">
-                <div class="program-card reveal">
-                    <div class="program-icon"><i class="fas fa-book-quran"></i></div>
-                    <h3>Tahfidz Al-Qur'an</h3>
-                    <p>Program hafalan Al-Qur'an 30 Juz dengan metode tahsin dan tajwid yang terstruktur, dibimbing oleh para hafizh berpengalaman.</p>
+            <p>Berbagai program pendidikan yang dirancang untuk membangun karakter dan keilmuan santri</p>
+        </div>
+        <div class="programs-grid">
+            <div class="program-card reveal">
+                <div class="program-icon">
+                    <i class="fas fa-quran"></i>
                 </div>
-                <div class="program-card reveal">
-                    <div class="program-icon"><i class="fas fa-book-open"></i></div>
-                    <h3>Kitab Kuning</h3>
-                    <p>Pembelajaran kitab-kitab klasik seperti Fathul Mu'in, Ta'lim Muta'allim, dan lainnya untuk memperdalam pemahaman keislaman.</p>
+                <a href="pelajaran.html"><h3>Tahfidz al qur'an</h3></a>
+                <p>Program hafalan Al-Qur'an dengan metode tartil dan mutqin, dilengkapi bimbingan tajwid dan makhraj yang benar.</p>
+            </div>
+            <div class="program-card reveal">
+                <div class="program-icon">
+                    <i class="fas fa-graduation-cap"></i>
                 </div>
-                <div class="program-card reveal">
-                    <div class="program-icon"><i class="fas fa-language"></i></div>
-                    <h3>Bahasa Arab & Inggris</h3>
-                    <p>Program intensif bahasa Arab dan Inggris untuk mempersiapkan santri berkomunikasi secara global dan memahami kitab-kitab klasik.</p>
+                <h3>Kitab Kuning</h3>
+                <p>Studi kitab-kitab klasik seperti Fathul Qorib, Taqrib, dan Alfiyah Ibnu Malik dengan sanad yang sahih.</p>
+            </div>
+           
+            <div class="program-card reveal">
+                <div class="program-icon">
+                    <i class="fas fa-language"></i>
                 </div>
-                <div class="program-card reveal">
-                    <div class="program-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <h3>Pendidikan Formal</h3>
-                    <p>Program SMP, SMA, dan MA dengan kurikulum nasional yang terintegrasi dengan nilai-nilai keislaman dan kepesantrenan.</p>
+                <h3>Bahasa Asing</h3>
+                <p>Program intensif bahasa Arab dan Inggris dengan native speaker untuk mempersiapkan santri berkomunikasi global.</p>
+            </div>
+            <div class="program-card reveal">
+                <div class="program-icon">
+                    <i class="fas fa-users"></i>
                 </div>
-              
-                <div class="program-card reveal">
-                    <div class="program-icon"><i class="fas fa-hands-praying"></i></div>
-                    <h3>Kepemimpinan & Dakwah</h3>
-                    <p>Pelatihan kepemimpinan, public speaking, dan keterampilan dakwah untuk membentuk pemimpin masa depan.</p>
+                <h3>Leadership</h3>
+                <p>Pelatihan kepemimpinan Islami, manajemen organisasi, dan public speaking untuk melahirkan pemimpin masa depan.</p>
+            </div>
+            <div class="program-card reveal">
+                <div class="program-icon">
+                    <i class="fas fa-heart"></i>
                 </div>
+                <h3>Akhlak & Character</h3>
+                <p>Pembentukan akhlak mulia melalui pembiasaan adab, shalat berjamaah, dan kegiatan sosial kemasyarakatan.</p>
+            </div>
+
+             <div class="program-card reveal">
+                <div class="program-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+              <a href="pelajaran.html"><h3>Klik lihat detail</h3></a>
+               
+            </div>
+        </div>
+     
+    </section>
+
+        <!-- Programs Section -->
+    <section class="programs" id="program">
+        <div class="section-header reveal">
+            <h2>Prestasi santri darut thalib</h2>
+            <div class="divider"></div>
+            <p>Berbagai program pendidikan yang dirancang untuk membangun karakter dan keilmuan santri</p>
+        </div>
+        <div class="programs-grid">
+            <div class="program-card reveal">
+                <div class="program-icon">
+                    <i class="fas fa-quran"></i>
+                </div>
+                <h3>Tahfidz Qur'an</h3>
+                <p>Program hafalan Al-Qur'an dengan metode tartil dan mutqin, dilengkapi bimbingan tajwid dan makhraj yang benar.</p>
+            </div>
+            <div class="program-card reveal">
+                <div class="program-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Kitab Kuning</h3>
+                <p>Studi kitab-kitab klasik seperti Fathul Qorib, Taqrib, dan Alfiyah Ibnu Malik dengan sanad yang sahih.</p>
+            </div>
+           
+            <div class="program-card reveal">
+                <div class="program-icon">
+                    <i class="fas fa-language"></i>
+                </div>
+                <h3>Bahasa Asing</h3>
+                <p>Program intensif bahasa Arab dan Inggris dengan native speaker untuk mempersiapkan santri berkomunikasi global.</p>
+            </div>
+            <div class="program-card reveal">
+                <div class="program-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Leadership</h3>
+                <p>Pelatihan kepemimpinan Islami, manajemen organisasi, dan public speaking untuk melahirkan pemimpin masa depan.</p>
+            </div>
+            <div class="program-card reveal">
+                <div class="program-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Akhlak & Character</h3>
+                <p>Pembentukan akhlak mulia melalui pembiasaan adab, shalat berjamaah, dan kegiatan sosial kemasyarakatan.</p>
             </div>
         </div>
     </section>
 
     <!-- Facilities Section -->
     <section class="facilities" id="fasilitas">
-        <div class="container">
-            <div class="section-header reveal">
-                <h2>Fasilitas Lengkap</h2>
-                <div class="divider"></div>
-                <p>Fasilitas modern yang mendukung proses pembelajaran dan pengembangan diri santri</p>
+        <div class="section-header reveal">
+            <h2>Fasilitas Lengkap</h2>
+            <div class="divider"></div>
+            <p>Dukungan fasilitas terbaik untuk kenyamanan belajar dan tinggal santri</p>
+        </div>
+        <div class="facilities-grid">
+            <div class="facility-item reveal">
+                <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&h=400&fit=crop" alt="Perpustakaan">
+                <div class="facility-overlay">
+                    <h3>Perpustakaan Modern</h3>
+                    <p>Koleksi 10,000+ buku dan akses digital</p>
+                </div>
             </div>
-            <div class="facilities-grid">
-                <div class="facility-card reveal">
-                    <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600" alt="Asrama">
-                    <div class="facility-overlay">
-                        <h3>Asrama Nyaman</h3>
-                        <p>Lingkungan asrama yang bersih, nyaman, dan kondusif untuk belajar</p>
-                    </div>
+            <div class="facility-item reveal">
+                <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=600&h=400&fit=crop" alt="Asrama">
+                <div class="facility-overlay">
+                    <h3>Asrama Nyaman</h3>
+                    <p>Kamar ber-AC dengan fasilitas lengkap</p>
                 </div>
-                <div class="facility-card reveal">
-                    <img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?w=600" alt="Masjid">
-                    <div class="facility-overlay">
-                        <h3>Masjid Megah</h3>
-                        <p>Masjid dengan kapasitas besar untuk ibadah berjamaah dan tadarus</p>
-                    </div>
+            </div>
+            <div class="facility-item reveal">
+                <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&h=400&fit=crop" alt="Laboratorium">
+                <div class="facility-overlay">
+                    <h3>Lab Komputer</h3>
+                    <p>100+ unit PC dengan koneksi internet cepat</p>
                 </div>
-                <div class="facility-card reveal">
-                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600" alt="Ruang Kelas">
-                    <div class="facility-overlay">
-                        <h3>Ruang Kelas Modern</h3>
-                        <p>Ruang kelas ber-AC dengan fasilitas multimedia lengkap</p>
-                    </div>
+            </div>
+            <div class="facility-item reveal">
+                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop" alt="Masjid">
+                <div class="facility-overlay">
+                    <h3>Masjid Besar</h3>
+                    <p>Kapasitas 2,000 jamaah dengan AC</p>
                 </div>
-              
-                <div class="facility-card reveal">
-                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=600" alt="Perpustakaan">
-                    <div class="facility-overlay">
-                        <h3>Perpustakaan</h3>
-                        <p>Koleksi ribuan buku Islam dan umum dengan sistem digital</p>
-                    </div>
+            </div>
+            <div class="facility-item reveal">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop" alt="Lapangan">
+                <div class="facility-overlay">
+                    <h3>Lapangan Olahraga</h3>
+                    <p>Futsal, basket, dan area fitness</p>
                 </div>
-                <div class="facility-card reveal">
-                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600" alt="Lapangan">
-                    <div class="facility-overlay">
-                        <h3>Lapangan Olahraga</h3>
-                        <p>Lapangan futsal, voli, dan area olahraga untuk kebugaran</p>
-                    </div>
+            </div>
+            <div class="facility-item reveal">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop" alt="Kantin">
+                <div class="facility-overlay">
+                    <h3>Kantin Sehat</h3>
+                    <p>Menu bergizi dengan standar kebersihan tinggi</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Teachers Section -->
-    <section class="teachers" id="pengajar">
-        <div class="container">
-            <div class="section-header reveal">
-                <h2>Pengajar & Pengasuh</h2>
-                <div class="divider"></div>
-                <p>Dibimbing oleh para ustadz dan ustadzah berkualitas dengan latar belakang pendidikan tinggi</p>
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="section-header reveal">
+            <h2>Testimoni Alumni</h2>
+            <div class="divider"></div>
+            <p>Kata mereka yang telah merasakan pendidikan di Pondok Pesantren Al-Hikmah</p>
+        </div>
+        <div class="testimonial-slider reveal">
+            <div class="testimonial-card" id="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <p>"Al-Hikmah mengubah hidup saya. Dari seorang yang awam, saya menjadi hafizh 30 juz dan kini melanjutkan studi di Universitas Al-Azhar Kairo. Terima kasih para ustadz dan pengasuh."</p>
+                <div class="testimonial-author">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Ahmad">
+                    <div>
+                        <h4>Ahmad Fauzi</h4>
+                        <span>Mahasiswa Al-Azhar, Kairo</span>
+                    </div>
+                </div>
             </div>
-            <div class="teachers-grid">
-                <div class="teacher-card reveal">
-                    <div class="teacher-image">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <div class="teacher-info">
-                        <h3>Ustadz.Boby gustiadi</h3>
-                        <div class="role">Pimpinan pondok pesantren darut thalib</div>
-                        <p>Lulusan pondok pesantren darus salam auduri sumani.</p>
-                    </div>
-                </div>
-                <div class="teacher-card reveal">
-                    <div class="teacher-image">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <div class="teacher-info">
-                        <h3>Ustadz Dr. Muhammad Hafiz</h3>
-                        <div class="role">Kepala Madrasah</div>
-                        <p>Ph.D dalam Studi Islam dari UIN Jakarta, spesialisasi dalam pendidikan Islam dan manajemen pesantren.</p>
-                    </div>
-                </div>
-                <div class="teacher-card reveal">
-                    <div class="teacher-image">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <div class="teacher-info">
-                        <h3>Ustadzah Sarah Aminah</h3>
-                        <div class="role">Koordinator Tahfidz</div>
-                        <p>Hafizhah 30 Juz, lulusan LIPIA Jakarta dengan spesialisasi dalam metodologi tahfidz anak dan remaja.</p>
-                    </div>
-                </div>
+            <div class="slider-dots">
+                <span class="dot active" onclick="showTestimonial(0)"></span>
+                <span class="dot" onclick="showTestimonial(1)"></span>
+                <span class="dot" onclick="showTestimonial(2)"></span>
             </div>
         </div>
     </section>
 
-    <!-- News Section -->
-    <section class="news" id="berita">
-        <div class="container">
-            <div class="section-header reveal">
-                <h2>Berita & Kegiatan</h2>
-                <div class="divider"></div>
-                <p>Ikuti perkembangan terbaru dan kegiatan menarik di Pondok Pesantren Darut Thalib</p>
-            </div>
-            <div class="news-grid">
-                <div class="news-card reveal">
-                    <div class="news-image"><i class="fas fa-trophy"></i></div>
-                    <div class="news-content">
-                        <span class="news-date">20 Juni 2026</span>
-                        <h3>Juara 1 Lomba Tahfidz Nasional</h3>
-                        <p>Santri Darut Thalib meraih juara pertama dalam ajang Lomba Tahfidz Nasional yang diadakan di Jakarta.</p>
-                        <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="news-card reveal">
-                    <div class="news-image"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="news-content">
-                        <span class="news-date">15 Juni 2026</span>
-                        <h3>Wisuda Tahfidz 30 Juz Angkatan ke-15</h3>
-                        <p>50 santri dinyatakan lulus hafalan 30 Juz Al-Qur'an dalam acara wisuda tahunan yang meriah.</p>
-                        <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="news-card reveal">
-                    <div class="news-image"><i class="fas fa-calendar-star"></i></div>
-                    <div class="news-content">
-                        <span class="news-date">10 Juni 2026</span>
-                        <h3>Peringatan Hari Santri Nasional 2026</h3>
-                        <p>Rangkaian acara peringatan Hari Santri dengan berbagai lomba keagamaan dan seminar motivasi.</p>
-                        <a href="lomba.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
+    <!-- Gallery -->
     <section class="gallery" id="galeri">
-        <div class="container">
-            <div class="section-header reveal">
-                <h2>Galeri Kegiatan</h2>
-                <div class="divider"></div>
-                <p>Dokumentasi momen-momen berharga kegiatan di Pondok Pesantren Darut Thalib</p>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item reveal">
-                    <img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?w=600" alt="Kegiatan 1">
-                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal">
-                    <img src="https://images.unsplash.com/photo-1564121211835-e88c852648ab?w=600" alt="Kegiatan 2">
-                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal">
-                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600" alt="Kegiatan 3">
-                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal">
-                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c8f1?w=600" alt="Kegiatan 4">
-                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal">
-                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600" alt="Kegiatan 5">
-                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item reveal">
-                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=600" alt="Kegiatan 6">
-                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-            </div>
+        <div class="section-header reveal">
+            <h2>Galeri Kegiatan</h2>
+            <div class="divider"></div>
+            <p>Momen-momen berharga selama kegiatan belajar mengajar</p>
         </div>
-    </section>
-
-    <!-- Alumni Section -->
-    <section class="alumni" id="alumni">
-        <div class="container">
-            <div class="section-header reveal">
-                <h2>Testimoni Alumni</h2>
-                <div class="divider"></div>
-                <p>Kisah sukses alumni Darut Thalib yang telah berkontribusi untuk umat dan bangsa</p>
+        <div class="gallery-grid">
+            <div class="gallery-item reveal">
+                <img src="https://images.unsplash.com/photo-1519817914152-22d216bb9170?w=600&h=600&fit=crop" alt="Kegiatan 1">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
             </div>
-            <div class="alumni-grid">
-                <div class="alumni-card reveal">
-                    <div class="alumni-avatar"><i class="fas fa-user"></i></div>
-                    <p>"Pondok Pesantren Darut Thalib mengajarkan saya tidak hanya ilmu agama, tetapi juga keberanian untuk berkarya. Ilmu tahfidz dan kepemimpinan yang saya dapat sangat membantu karir saya sebagai dosen dan pengusaha."</p>
-                    <h4>Ahmad Rizky, S.Pd.I, M.Pd</h4>
-                    <div class="career">Dosen & Pengusaha Syariah</div>
-                </div>
-                <div class="alumni-card reveal">
-                    <div class="alumni-avatar"><i class="fas fa-user"></i></div>
-                    <p>"Lingkungan pesantren yang kondusif dan para ustadz yang peduli membuat saya termotivasi untuk terus belajar. Saya berhasil menyelesaikan hafalan 30 Juz dan melanjutkan studi ke Timur Tengah."</p>
-                    <h4>Fatimah Azzahra</h4>
-                    <div class="career">Mahasiswa S2 UIN Jakarta</div>
-                </div>
-                <div class="alumni-card reveal">
-                    <div class="alumni-avatar"><i class="fas fa-user"></i></div>
-                    <p>"Program teknologi dan bahasa Inggris di Darut Thalib membuka wawasan saya. Kini saya bekerja sebagai software engineer di perusahaan teknologi internasional sambil terus aktif di dakwah digital."</p>
-                    <h4>Muhammad Fajar</h4>
-                    <div class="career">Software Engineer & Content Creator</div>
-                </div>
+            <div class="gallery-item reveal">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop" alt="Kegiatan 2">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="gallery-item reveal">
+                <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=400&h=300&fit=crop" alt="Kegiatan 3">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="gallery-item reveal">
+                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=300&fit=crop" alt="Kegiatan 4">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="gallery-item reveal">
+                <img src="https://images.unsplash.com/photo-1427504746788-8f615f8c7fe9?w=400&h=300&fit=crop" alt="Kegiatan 5">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact" id="kontak">
-        <div class="container">
-            <div class="section-header reveal">
-                <h2>Hubungi Kami</h2>
-                <div class="divider"></div>
-                <p>Silakan hubungi kami untuk informasi lebih lanjut atau kunjungi pesantren kami</p>
+        <div class="section-header reveal">
+            <h2>Hubungi Kami</h2>
+            <div class="divider"></div>
+            <p>Informasi lebih lanjut tentang Pondok Pesantren Al-Hikmah</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info reveal">
+                <h3>Mari Berkenalan</h3>
+                <p>Silakan hubungi kami untuk informasi lebih detail tentang program pendidikan, fasilitas, atau kunjungan ke pondok pesantren.</p>
+                
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Alamat</h4>
+                        <span>laing kecamatan tanjung harapan, kota solok </span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Telepon</h4>
+                        <span>0822-8719-6964</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <span>info@darut thalib.sch.id</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <span>+62-822-8719-6964</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Jam Operasional</h4>
+                        <span>Senin - Sabtu: 07.00 - 17.00 WIB</span>
+                    </div>
+                </div>
             </div>
-            <div class="contact-grid">
-                <div class="contact-info reveal">
-                    <h3>Informasi Kontak</h3>
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div>
-                            <h4>Alamat</h4>
-                            <p>Jl. Pesantren No. 123, Kecamatan Islamic, Kota Ilmu, Indonesia</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
-                        <div>
-                            <h4>WhatsApp</h4>
-                            <p><a href="https://wa.me/6281234567890" target="_blank">+62 812-3456-7890</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                        <div>
-                            <h4>Email</h4>
-                            <p><a href="mailto:info@darutthalib.sch.id">info@darutthalib.sch.id</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
-                        <div>
-                            <h4>Jam Operasional</h4>
-                            <p>Senin - Sabtu: 07.00 - 16.00 WIB</p>
-                        </div>
-                    </div>
-
-                    
-                </div>
-                <div class="map-container reveal">
-                    <div class="map-placeholder">
-                        <i class="fas fa-map-marked-alt"></i>
-                        <h3 style="color: var(--dark-green); margin-bottom: 8px;">Google Maps</h3>
-                        <p>Embed Google Maps di sini</p>
-                        <p style="font-size: 0.8rem; margin-top: 8px;">Ganti dengan iframe Google Maps Anda</p>
-                    </div>
-                </div>
+            <div class="map-container reveal">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.4707051113974!2d100.65702077714171!3d-0.7563339972671804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2b332728946a6d%3A0x5de6c535c493ea36!2sPondok%20Pesantren%20Darut%20Thalib!5e0!3m2!1sid!2sid!4v1782576861078!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <h3><img src="Screenshot 2026-06-24 203849.png" alt="Logo"> Pondok Pesantren Darut Thalib</h3>
-                    <p>Membentuk generasi Qur'ani yang berilmu, berakhlak mulia, dan mandiri. Lembaga pendidikan Islam modern yang mengintegrasikan nilai-nilai tradisional dan teknologi.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h4>Menu Cepat</h4>
-                    <ul>
-                        <li><a onclick="scrollToSection('home')">Beranda</a></li>
-                        <li><a onclick="scrollToSection('profil')">Profil</a></li>
-                        <li><a onclick="scrollToSection('program')">Program</a></li>
-                        <li><a onclick="scrollToSection('kontak')">Kontak</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Program</h4>
-                    <ul>
-                        <li><a onclick="scrollToSection('program')">Tahfidz Al-Qur'an</a></li>
-                        <li><a onclick="scrollToSection('program')">Kitab Kuning</a></li>
-                        <li><a onclick="scrollToSection('program')">Bahasa Arab</a></li>
-                        <li><a onclick="scrollToSection('program')">Teknologi</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Layanan</h4>
-                    <ul>
-                        <li><a href="https://wa.me/6282287196964" target="_blank">Pendaftaran Online</a></li>
-                        <li><a href="#">E-Learning</a></li>
-                        <li><a href="#">Perpustakaan Digital</a></li>
-                        <li><a onclick="scrollToSection('alumni')">Alumni Network</a></li>
-                    </ul>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo-text" style="font-size: 24px;">Al-Hikmah <span>Pesantren</span></div>
+                <p>Mencetak generasi Qur'ani yang berakhlak mulia, berilmu luas, dan siap menjadi pemimpin umat.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p> Pondok Pesantren Darut Thalib. All rights reserved. | Made with <i class="fas fa-heart" style="color: var(--accent-gold);"></i> for Umat</p>
+            <div class="footer-links">
+                <h4>Link Cepat</h4>
+                <ul>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#tentang">Tentang Kami</a></li>
+                    <li><a href="#program">Program</a></li>
+                    <li><a href="#fasilitas">Fasilitas</a></li>
+                    <li><a href="#galeri">Galeri</a></li>
+                </ul>
             </div>
+            <div class="footer-links">
+                <h4>Program</h4>
+                <ul>
+                    <li><a href="#">Tahfidz Qur'an</a></li>
+                    <li><a href="#">Kitab Kuning</a></li>
+                    <li><a href="#">Bahasa Asing</a></li>
+                    <li><a href="#">Leadership</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Kontak</h4>
+                <ul>
+                    <li><a href="#">info@alhikmah.sch.id</a></li>
+                    <li><a href="#">0822-8719-6964</a></li>
+                    <li><a href="#">+62 812-3456-7890</a></li>
+                    <li><a href="#">kota solok , sumatra barat </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p> Pondok Pesantren Darut thalib. All Rights Reserved. | Dibuat dengan ❤️ untuk Umat</p>
         </div>
     </footer>
 
-    <!-- Back to Top -->
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/6282287196964" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <div class="whatsapp-tooltip">Chat dengan Kami!</div>
+    </div>
 
     <script>
-        // Scroll to section function
-        function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            if (section) {
-                const navbarHeight = document.getElementById('navbar').offsetHeight;
-                const sectionTop = section.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 20;
-                window.scrollTo({
-                    top: sectionTop,
-                    behavior: 'smooth'
-                });
-            }
-
-            // Close mobile menu if open
-            const navLinks = document.getElementById('navLinks');
-            navLinks.classList.remove('active');
-            const icon = document.getElementById('mobileMenuBtn').querySelector('i');
-            icon.classList.add('fa-bars');
-            icon.classList.remove('fa-times');
-        }
-
         // Loading Screen
         window.addEventListener('load', () => {
             setTimeout(() => {
@@ -490,79 +425,131 @@
             }, 1500);
         });
 
-        // Mobile Menu
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navLinks = document.getElementById('navLinks');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            const icon = mobileMenuBtn.querySelector('i');
-            icon.classList.toggle('fa-bars');
-            icon.classList.toggle('fa-times');
-        });
-
-        // Navbar scroll effect
-        const navbar = document.getElementById('navbar');
+        // Navbar Scroll Effect
         window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
             if (window.scrollY > 50) {
-                navbar.style.background = 'rgba(13, 59, 35, 0.98)';
-                navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+                navbar.classList.add('scrolled');
             } else {
-                navbar.style.background = 'rgba(13, 59, 35, 0.95)';
-                navbar.style.boxShadow = 'none';
+                navbar.classList.remove('scrolled');
             }
         });
 
-        // Active nav link on scroll
-        const sections = document.querySelectorAll('section[id]');
-        const navItems = document.querySelectorAll('.nav-links a');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const navbarHeight = navbar.offsetHeight;
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - navbarHeight - 100;
-                if (window.scrollY >= sectionTop) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navItems.forEach(item => {
-                item.classList.remove('active');
-                if (item.getAttribute('data-section') === current) {
-                    item.classList.add('active');
-                }
-            });
-        });
-
-        // Scroll Reveal
+        // Scroll Reveal Animation
         const revealElements = document.querySelectorAll('.reveal');
-
-        const revealOnScroll = () => {
-            revealElements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-                if (elementTop < windowHeight - 100) {
-                    element.classList.add('active');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
                 }
             });
-        };
+        }, { threshold: 0.1 });
 
-        window.addEventListener('scroll', revealOnScroll);
-        revealOnScroll();
+        revealElements.forEach(el => revealObserver.observe(el));
 
-        // Back to Top
-        const backToTop = document.getElementById('backToTop');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 500) {
-                backToTop.classList.add('visible');
-            } else {
-                backToTop.classList.remove('visible');
+        // Animated Counter
+        const counters = document.querySelectorAll('.counter');
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = parseInt(entry.target.getAttribute('data-target'));
+                    const duration = 2000;
+                    const step = target / (duration / 16);
+                    let current = 0;
+                    
+                    const updateCounter = () => {
+                        current += step;
+                        if (current < target) {
+                            entry.target.textContent = Math.floor(current);
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            entry.target.textContent = target;
+                        }
+                    };
+                    
+                    updateCounter();
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counters.forEach(counter => counterObserver.observe(counter));
+
+        // Testimonial Slider
+        const testimonials = [
+            {
+                text: "Al-Hikmah mengubah hidup saya. Dari seorang yang awam, saya menjadi hafizh 30 juz dan kini melanjutkan studi di Universitas Al-Azhar Kairo. Terima kasih para ustadz dan pengasuh.",
+                name: "Ahmad Fauzi",
+                role: "Mahasiswa Al-Azhar, Kairo",
+                img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+            },
+            {
+                text: "Saya bangga menjadi alumni Al-Hikmah. Ilmu agama dan umum yang saya dapat sangat bermanfaat dalam karir saya sebagai dokter. Pondok ini benar-benar membentuk karakter saya.",
+                name: "Dr. Sarah Amalia",
+                role: "Dokter Spesialis Anak, RS Harapan Kita",
+                img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face"
+            },
+            {
+                text: " darut thalib sangat membantu saya. Saya belajar programming sambil tetap istiqomah dalam ibadah. Sekarang saya bekerja di startup teknologi ternama.",
+                name: "Muhammad Rizky",
+                role: "Software Engineer, Tokopedia",
+                img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face"
             }
+        ];
+
+        let currentTestimonial = 0;
+
+        function showTestimonial(index) {
+            currentTestimonial = index;
+            const card = document.getElementById('testimonial-card');
+            const dots = document.querySelectorAll('.dot');
+            
+            card.style.animation = 'none';
+            setTimeout(() => {
+                card.innerHTML = `
+                    <i class="fas fa-quote-left"></i>
+                    <p>"${testimonials[index].text}"</p>
+                    <div class="testimonial-author">
+                        <img src="${testimonials[index].img}" alt="${testimonials[index].name}">
+                        <div>
+                            <h4>${testimonials[index].name}</h4>
+                            <span>${testimonials[index].role}</span>
+                        </div>
+                    </div>
+                `;
+                card.style.animation = 'fadeIn 0.5s ease';
+            }, 10);
+
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        // Auto slide testimonials
+        setInterval(() => {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }, 5000);
+
+        // Smooth Scroll for Nav Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
         });
 
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+        // Parallax Effect for Hero Particles
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const particles = document.querySelectorAll('.particle');
+            particles.forEach((particle, index) => {
+                const speed = (index + 1) * 0.5;
+                particle.style.transform = `translateY(${scrolled * speed}px)`;
+            });
         });
     </script>
 </body>
